@@ -1,9 +1,10 @@
-package com.example.mytodoapp
+package com.example.todoapp
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.mytodoapp.databinding.TaskItemCellBinding
+import com.example.todoapp.databinding.TaskItemCellBinding
+import com.example.todoapp.view.TaskItemViewHolder
 
 class TaskItemAdapter(
     private val taskItems: List<TaskItem>,

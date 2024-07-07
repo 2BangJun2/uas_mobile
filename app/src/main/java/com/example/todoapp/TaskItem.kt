@@ -1,4 +1,4 @@
-package com.example.mytodoapp
+package com.example.todoapp
 
 import android.content.Context
 import androidx.core.content.ContextCompat
@@ -12,12 +12,11 @@ class TaskItem(
     var dueTime: LocalTime?,
     var completedDate: LocalDate?,
     var id: UUID = UUID.randomUUID()
-)
-{
+) {
     fun isCompleted() = completedDate != null
-    fun imageResource(): Int = if(isCompleted()) R.drawable.checked_24 else R.drawable.unchecked_24
-    fun imageColor(context: Context): Int = if(isCompleted()) purple(context) else black(context)
+    fun imageResource(): Int = if (isCompleted()) R.drawable.checked_24 else R.drawable.unchecked_24
+    fun imageColor(context: Context): Int = if (isCompleted()) teal(context) else black(context)
 
-    private fun purple(context: Context) = ContextCompat.getColor(context, R.color.purple_500)
+    private fun teal(context: Context) = ContextCompat.getColor(context, R.color.teal_700) //
     private fun black(context: Context) = ContextCompat.getColor(context, R.color.black)
 }

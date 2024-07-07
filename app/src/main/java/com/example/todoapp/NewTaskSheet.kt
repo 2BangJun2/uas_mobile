@@ -1,4 +1,4 @@
-package com.example.mytodoapp
+package com.example.todoapp
 
 import android.app.TimePickerDialog
 import android.os.Bundle
@@ -7,7 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
-import com.example.mytodoapp.databinding.FragmentNewTaskSheetBinding
+import com.example.todoapp.databinding.FragmentNewTaskSheetBinding
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import java.time.LocalTime
 
@@ -34,7 +34,7 @@ class NewTaskSheet(var taskItem: TaskItem?) : BottomSheetDialogFragment()
         }
         else
         {
-            binding.taskTitle.text = "New Task"
+            binding.taskTitle.text = "Task Baru"
         }
 
         taskViewModel = ViewModelProvider(activity).get(TaskViewModel::class.java)

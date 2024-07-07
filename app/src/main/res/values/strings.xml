@@ -1,7 +1,9 @@
 <resources>
-    <string name="app_name">MY TODO APP</string>
+    <string name="app_name">Task List APP</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="place_holder">Place Holder</string>
     <string name="checkbox">CheckBox</string>
+    <string name="delete">Delete</string>
+    <string name="pilih_waktu">Pilih Waktu</string>
 </resources>
